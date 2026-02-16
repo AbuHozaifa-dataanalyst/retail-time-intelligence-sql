@@ -9,7 +9,7 @@
    1. Load dim_date
    ========================== */
 BULK INSERT dim_date
-FROM "D:\GitHub\Retail_Time_Intelligence_Sql\data\dim_date.csv"
+FROM 'C:\path_to_csv\dim_store.csv'
 WITH (
     FIRSTROW = 2,               -- Skip header row
     FIELDTERMINATOR = ',',      -- CSV separator
@@ -60,3 +60,4 @@ WITH (
    - Ensure CSV columns match the table structure exactly.
    - If CSV uses quotes around text, you can add: FIELDQUOTE = '"'
 ========================== */
+
