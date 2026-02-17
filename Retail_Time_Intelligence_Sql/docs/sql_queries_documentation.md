@@ -17,3 +17,9 @@ JOIN dim_date d ON f.date_key = d.date_key
 GROUP BY d.full_date
 ORDER BY d.full_date;
 
+Sample Output:
+
+full_date	total_sales
+2022-01-01	12,500.00
+2022-01-02	14,300.50
+2022-01-03	11,200.00
