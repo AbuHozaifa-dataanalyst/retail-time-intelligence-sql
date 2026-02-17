@@ -24,8 +24,11 @@ full_date	total_sales
 2022-01-02	14,300.50
 2022-01-03	11,200.00
 
+---
+
 ## Query 2 - Total Sales by Month  
 **Purpose:** Aggregate daily sales into monthly totals.  
 **Business Insight:** Detect monthly trends, seasonality, and growth patterns.  
 **SQL Code:**
 ```sql
+
