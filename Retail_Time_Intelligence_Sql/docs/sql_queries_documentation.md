@@ -26,9 +26,14 @@ full_date	total_sales
 
 ---
 
-## Query 2 - Total Sales by Month  
-**Purpose:** Aggregate daily sales into monthly totals.  
-**Business Insight:** Detect monthly trends, seasonality, and growth patterns.  
+## Query 2 - Total Sales by Month
+
+**Purpose:** Aggregate daily sales into monthly totals.
+
+**Business Insight:** Detect monthly trends, seasonality, and growth patterns.
+
 **SQL Code:**
+
 ```sql
+
 
