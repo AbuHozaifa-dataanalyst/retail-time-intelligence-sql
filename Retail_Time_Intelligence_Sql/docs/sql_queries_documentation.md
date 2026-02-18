@@ -25,8 +25,6 @@ full_date	total_sales
 2022-01-03	11,200.00
 
 
-
-
 # SQL Queries Documentation
 This document explains all **25 advanced time intelligence SQL queries** included in this project.
 
@@ -52,6 +50,11 @@ full_date	total_sales
 2022-01-01	12,500.00
 2022-01-02	14,300.50
 2022-01-03	11,200.00
+
+
+
+
+
 
 
 
