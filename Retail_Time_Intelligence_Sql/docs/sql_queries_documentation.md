@@ -17,7 +17,7 @@ The dataset follows a star schema:
 
 ---
 
-# 1️⃣ Total Sales by Day
+## 1️⃣ Total Sales by Day
 
 **Purpose:** Calculate total daily sales across all stores and products.
 
@@ -35,7 +35,7 @@ full_date	total_sales
 2022-01-01	12,500.00
 2022-01-02	14,300.50
 
-2️⃣ Total Sales by Month
+## 2️⃣ Total Sales by Month
 Purpose: Aggregate daily sales into monthly totals.
 
 Business Insight: Useful for identifying seasonal patterns and monthly growth.
@@ -50,7 +50,7 @@ Sample Output:
 year	month_name	total_sales
 2022	January	350,000.00
 
-3️⃣ Month-to-Date (MTD) Sales
+## 3️⃣ Month-to-Date (MTD) Sales
 Purpose: Cumulative sales within the current month.
 
 Business Insight: Tracks progress against monthly sales targets.
@@ -62,7 +62,7 @@ JOIN dim_date d ON f.date_key = d.date_key
 GROUP BY d.full_date, d.year, d.month;
 Sample Output: full_date | mtd_sales
 
-4️⃣ Year-to-Date (YTD) Sales
+## 4️⃣ Year-to-Date (YTD) Sales
 Purpose: Cumulative sales from start of year.
 
 Business Insight: Measures annual performance progression.
@@ -72,21 +72,21 @@ SELECT d.full_date,
 FROM fact_sales f
 JOIN dim_date d ON f.date_key = d.date_key
 GROUP BY d.full_date, d.year;
-5️⃣ Week-over-Week Sales Change
+## 5️⃣ Week-over-Week Sales Change
 Purpose: Compare weekly sales to previous week.
 
 Business Insight: Detects short-term performance changes.
 
 Columns: year | week_number | total_weekly_sales | week_over_week_change
 
-6️⃣ Month-over-Month (MoM) Growth %
+## 6️⃣ Month-over-Month (MoM) Growth %
 Purpose: Measure monthly percentage growth.
 
 Business Insight: Evaluates month performance improvement.
 
 Column: mom_growth_pct
 
-7️⃣ Year-over-Year (YoY) Growth %
+## 7️⃣ Year-over-Year (YoY) Growth %
 Purpose: Compare same month vs previous year.
 
 Business Insight: Measures long-term growth trend.
@@ -184,3 +184,4 @@ Business Insight: Measures customer spending behavior.
 Purpose: Percentage contribution of store/product to total sales.
 
 Business Insight: Identifies revenue concentration.
+
